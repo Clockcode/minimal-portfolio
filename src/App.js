@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { GeistProvider, CssBaseline } from "@geist-ui/core";
+import "inter-ui/inter.css";
+import { Button, Page, Text } from "@geist-ui/core";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Home = () => (
+  <Page>
+    <Text h1>Cagdas Muldur</Text>
+  </Page>
+);
 
-export default App;
+export default () => (
+  <GeistProvider>
+    <CssBaseline />
+    <Home />
+  </GeistProvider>
+);
