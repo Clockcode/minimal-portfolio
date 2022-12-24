@@ -1,5 +1,10 @@
-.App {
+.text-align {
   text-align: center;
+}
+
+.header-title{
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .App-logo {

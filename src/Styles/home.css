@@ -1,0 +1,33 @@
+.home {
+    margin: 4em 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 4em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.subtitle {
+
+}
+
+.subtitle_sentence {
+    margin: .5em;
+}
+
+.subtitle_sentence_word {
+    margin: 0 .125em;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}
+.subtitle_sentence_link {
+    margin: 0 .125em;
+    font-size: 1.5em;
+    font-weight: 400;
+    
+}

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 5%;
+}
+
+.header_name {
+    font-size: 32px;
+    height: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.header_navigation {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+.navigation_item {
+    margin: 1em;
+    font-style: Helvetica;
+}
