@@ -1,5 +1,4 @@
-import "./App.css";
-import "inter-ui/inter.css";
+import "./App.css"
 import {
   BrowserRouter,
   Routes, //replaces "Switch" used till v5
