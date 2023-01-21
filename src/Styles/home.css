@@ -5,8 +5,8 @@
     flex-direction: column;
 }
 
-.title{
-    font-size: 4rem;
+.home .title{
+    font-size: 6rem;
     font-weight: 800;
     font-style: italic;
 }
