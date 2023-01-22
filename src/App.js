@@ -1,8 +1,6 @@
 import "./App.css"
 import {
   BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
