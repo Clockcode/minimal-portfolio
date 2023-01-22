@@ -16,9 +16,9 @@ export default function ProjectCard({projectDetails}) {
         </div>
         <div className="description">{projectDetails.desc}</div>
         <div className="project_images">
-          <img className="project_image" alt="project-image"></img>
-          <img className="project_image" alt="project-image"></img>
-          <img className="project_image" alt="project-image"></img>
+          <img className="project_image" alt="project"></img>
+          <img className="project_image" alt="project"></img>
+          <img className="project_image" alt="project"></img>
         </div>
       </div>
     </a>
