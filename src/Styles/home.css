@@ -1,19 +1,25 @@
 .home {
-    margin: 4rem 5%;
+    margin: 2rem 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.home .title{
-    font-size: 6rem;
+.home .titles .title{
+    font-size: 4rem;
     font-weight: 800;
-    font-style: italic;
+    visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+    /* font-style: italic; */
 }
 
-.subtitle {
-
+.titles:hover > .title {
+    visibility: visible;
+  opacity: 1;
 }
+
+
 
 .subtitle_sentence {
     margin: .5rem;
@@ -30,4 +36,49 @@
     font-size: 1.5rem;
     font-weight: 400;
     
+}
+
+
+/* Project related css */
+.project {
+    width: 75%;
+    margin: 0 auto;
+}
+
+ .project .title_with_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -1rem;
+    
+}
+
+.project .title {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.project .logo {
+    width: 3rem;
+}
+
+.project .description {
+    padding-left: 5rem;
+    font-size: 1rem;
+}
+
+.project .project_images {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.project .project_image {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
 }

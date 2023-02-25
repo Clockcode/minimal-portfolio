@@ -1,38 +1,38 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../Styles/home.css'
+import ProjectCard from "../Components/ProjectCard";
+import { motion } from 'framer-motion';
+import styled from "styled-components";
+import Titles from "../Components/Titles";
+
+let viralNationProject = {
+  title: "Viral Nation",
+  desc: "I started as a junior UI/UX designer then promoted to lead designer thanks to my skills in understanding the business requirements as well as being fast at solving problems.",
+  logo: "src/Assets/Images/VN_logo.png",
+  link: "/Projects/ViralNationProject",
+};
+
+const titles = ["Problem solver.", "Design advocate.", "Lifelong learner.", "Customer centric."]
+
+const Body = styled.div`
+  margin: 2rem 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
 export default function Home() {
+
   return (
-    <div className="home">
-      <h1 className="title">Design is my thing.</h1>
-      <div className="subtitle">
-        <span className="subtitle_sentence">
-          <span className="subtitle_sentence_word">I</span>
-          <Link className="subtitle_sentence_link" to="work">
-            work
-          </Link>
-          <span className="subtitle_sentence_word">on it.</span>
-        </span>
-        <span className="subtitle_sentence">
-          <span className="subtitle_sentence_word">I</span>
-          <span className="subtitle_sentence_link">read</span>
-          <span className="subtitle_sentence_word">about it.</span>
-        </span>
-        <span className="subtitle_sentence">
-          <span className="subtitle_sentence_word">I</span>
-          <Link className="subtitle_sentence_link" to="articles">
-            write
-          </Link>
-          <span className="subtitle_sentence_word">about it.</span>
-        </span>
-        <span className="subtitle_sentence">
-          <span className="subtitle_sentence_word">I do</span>
-          <Link className="subtitle_sentence_link" to="about">
-            other stuff
-          </Link>
-          <span className="subtitle_sentence_word">to.</span>
-        </span>
+    <Body>
+        <div className="titles">
+          <Titles titles={titles} />
+        </div>
+
+      <div className="projects">
+        <ProjectCard projectDetails={viralNationProject}></ProjectCard>
       </div>
-    </div>
+    </Body>
   );
 }
