@@ -4,11 +4,10 @@ import {
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
-import Home from "./Pages/Home";
+import HomePage from "./Pages/Home";
 import Header from "./Components/Header";
-import Work from "./Pages/Work";
-import Articles from "./Pages/Articles";
-import About from "./Pages/About";
+import ViralNation from "./Pages/Projects/ViralNation"
+import YoutubeAnalyzer from "./Pages/Projects/YoutubeAnalyzer"
 export default function App () {
  return (
    <div className="App">
@@ -16,10 +15,9 @@ export default function App () {
        <Header />
        <div className="container">
          <Routes>
-           <Route path="/" element={<Home />} />
-           <Route path="/work" element={<Work />} />
-           <Route path="/articles" element={<Articles />} />
-           <Route path="/about" element={<About />} />
+           <Route path="/" element={<HomePage />} />
+           <Route path="/projects/viralnation" element={<ViralNation />} />
+           <Route path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
          </Routes>
        </div>
      </BrowserRouter>
