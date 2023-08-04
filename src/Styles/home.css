@@ -12,10 +12,17 @@
     font-family: "Inter";
 }
 
+
 .title{
     font-size: 4.5rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
+}
+.home .title{
+    font-size: 6rem;
+    font-weight: 800;
+    font-style: italic;
+
 }
 
 .subtitle {
