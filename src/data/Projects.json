@@ -1,0 +1,18 @@
+[
+  {
+    "url": "/projects/viralnation",
+    "imgURL": "vn-logo.png",
+    "alt": "Viral Nation logo",
+    "title": "Viral Nation",
+    "desc": "Multiple projects I've worked in Viral Nation.",
+    "subtitles": ["Product Design", "Website", "Mobile App"]
+  },
+  {
+    "url": "/projects/viralnation",
+    "imgURL": "youtube-analyzer-widget.png",
+    "alt": "Youtube Analyzer extension image",
+    "title": "Youtube Analyzer",
+    "desc": "Chrome extension that summarizes comments using chatGPT and displays it in short form.",
+    "subtitles": ["Youtube", "Extension", "Tool"]
+  }
+]

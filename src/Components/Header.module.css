@@ -1,13 +1,13 @@
 .header {
     display: flex;
-    flex-direction: column;
     margin: 2rem 5%;
+    justify-content: space-between;
 }
 
 .header_name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     height: 2rem;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     font-family: "Reenie Beanie";
 }
@@ -16,14 +16,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
-}
-
-.navigation_item {
-    margin: 1rem;
-    font-style: Helvetica;
-    color: inherit;
-    text-decoration: none;
 }
 
 .active {

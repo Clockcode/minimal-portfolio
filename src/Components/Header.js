@@ -6,20 +6,10 @@ export default function Header() {
 
   return (
     <div className={styles.header}>
-      <h1 className={styles.header_name}>Chadash Muldur</h1>
       <nav className={styles.header_navigation}>
-        <Link className={styles.navigation_item}  to="/" >
-          Home
-        </Link>
-        <Link className={styles.navigation_item} to="work">
-          Work
-        </Link>
-        <Link className={styles.navigation_item} to="articles">
-          Articles
-        </Link>
-        <Link className={styles.navigation_item} to="about">
-          About
-        </Link>
+      <Link to="/" >
+        <h1 className={styles.header_name}>Chadash</h1>
+      </Link>
       </nav>
     </div>
   );
