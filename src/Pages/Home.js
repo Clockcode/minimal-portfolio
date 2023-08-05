@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
         <div className='about-img'>
-          <img src={profileImage} alt="profile image" />
+          <img src={profileImage} alt="profile" />
         </div>
       </section>
     </div>
