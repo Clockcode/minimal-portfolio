@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import ProjectCard from '../Components/ProjectCard';
 import '../Styles/home.css'
 import ytImage from "../Assets/Images/youtube-analyzer-widget.png"
@@ -25,22 +24,22 @@ export default function Home() {
         <div className='about-text'>
           <h3>About</h3>
           <div className='paragraph'>
-          <p className='paragraph-section'>
-            Born and raised in Turkey. Been living in Toronto for the past 4 years.
-          </p>
-          <p className='paragraph-section'>
-            Background in programming helped me come up with viable solutions that help grow the business and create simple designs that give users confidence.
-          </p>
-          <p className='paragraph-section'>
-            In my spare time, you can find me reading stuff, writing stuff, thinking about peculiarity of life and travelling.
-          </p>
-          <p className='paragraph-section'>
-            As of 2023, I live in Toronto, the most populated city in Canada and enjoy being warm at home or freezing outside.
-          </p>
+            <p className='paragraph-section'>
+              Born and raised in Turkey. Been living in Toronto for the past 4 years.
+            </p>
+            <p className='paragraph-section'>
+              Background in programming helped me come up with viable solutions that help grow the business and create simple designs that give users confidence.
+            </p>
+            <p className='paragraph-section'>
+              In my spare time, you can find me reading stuff, writing stuff, thinking about peculiarity of life and travelling.
+            </p>
+            <p className='paragraph-section'>
+              As of 2023, I live in Toronto, the most populated city in Canada and enjoy being warm at home or freezing outside.
+            </p>
           </div>
         </div>
         <div className='about-img'>
-        <img src={profileImage} alt="profile image" />
+          <img src={profileImage} alt="profile image" />
         </div>
       </section>
     </div>
