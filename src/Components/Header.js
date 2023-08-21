@@ -7,9 +7,9 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <nav className={styles.header_navigation}>
-      <Link to="/" >
-        <h1 className={styles.header_name}>Chadash</h1>
-      </Link>
+        <Link to="/" >
+          <h1 className="text-center text-lg">Chadash.me</h1>
+        </Link>
       </nav>
     </div>
   );

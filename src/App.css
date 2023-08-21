@@ -3,11 +3,12 @@ html {
   font-family: "Hanken Grotesk";
 }
 @font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('Assets/Fonts/HankenGrotesk/HankenGrotesk-Medium.ttf') format('truetype');
+  font-family: "Hanken Grotesk";
+  src: url("Assets/Fonts/HankenGrotesk/HankenGrotesk-Medium.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'Reenie Beanie';
-  src: url('Assets/Fonts/ReenieBeanie-Regular.ttf') format('truetype');
+  font-family: "Reenie Beanie";
+  src: url("Assets/Fonts/ReenieBeanie-Regular.ttf") format("truetype");
 }

@@ -13,13 +13,11 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects/viralnation" element={<ViralNation />} />
-            <Route path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/viralnation" element={<ViralNation />} />
+          <Route path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
