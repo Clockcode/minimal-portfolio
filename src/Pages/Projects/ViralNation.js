@@ -2,12 +2,12 @@ import React from 'react'
 import coverImage from "../../Assets/Images/vn_cover.jpg"
 export default function ViralNation() {
   return (
-    <div className='flex flex-col max-w-5xl mx-auto gap-12'>
+    <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
       <div className='h-96 overflow-hidden rounded-xl'>
         <img className='w-full bg-cover object-cover bg-top -mt-28' src={coverImage} alt='viral nation cover'></img>
       </div>
       <div className='flex flex-col gap-8'>
-        <h1 className='font-semibold text-4xl'>Viral Nation - A Hectic Startup Adventure</h1>
+        <h1 className='font-semibold text-4xl'>My Journey at Viral Nation</h1>
         <div className='flex justify-between flex-row'>
           <div className='flex flex-col'>
             <h4 className='font-semibold text-xl'>Contribution</h4>
@@ -40,9 +40,9 @@ export default function ViralNation() {
           <div className='flex flex-col gap-4'>
             <p className='text-lg font-light'>Working at a startup, especially one as dynamic as Viral Nation, was a roller-coaster. Here's a breakdown of my experience:</p>
             <ol>
-              <li>What I’ve learned.</li>
-              <li>Which problems I’ve faced with.</li>
-              <li>How I contributed to the company.</li>
+              <li className='text-lg font-light list-decimal'>What I’ve learned.</li>
+              <li className='text-lg font-light list-decimal'>Which problems I’ve faced with.</li>
+              <li className='text-lg font-light list-decimal'>How I contributed to the company.</li>
             </ol>
           </div>
         </div>
@@ -64,6 +64,10 @@ export default function ViralNation() {
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>UX Writing</h3>
             <p className='text-lg font-light'>Following the discovery phase, the key attributes for the app were trustworthiness, reliable, clean and intuitive.</p>
+          </div>
+          <div className='flex flex-col gap-4'>
+            <h3 className='text-blue-800'>Recruitment</h3>
+            <p className='text-lg font-light'>I was responsible for finding a suitable future teammate and preparing a design challenge that would determine if he would be a good fit for the culture.</p>
           </div>
         </div>
         {/* Challenges Section */}
