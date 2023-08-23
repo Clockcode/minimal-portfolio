@@ -1,4 +1,3 @@
-import "./App.css"
 import {
   BrowserRouter,
   Routes, //replaces "Switch" used till v5
@@ -10,7 +9,7 @@ import ViralNation from "./Pages/Projects/ViralNation"
 import YoutubeAnalyzer from "./Pages/Projects/YoutubeAnalyzer"
 export default function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Header />
         <Routes>
