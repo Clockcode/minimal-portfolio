@@ -20,7 +20,7 @@ export default function ViralNation() {
           </div>
           <div className='flex flex-col'>
             <h4 className='font-semibold text-xl'>Timeline</h4>
-            <p className='text-lg font-light'>Aug 2021 - Aug 2022</p>
+            <p className='text-lg font-light'>Aug 2021 - Aug 2023</p>
           </div>
         </div>
       </div>
