@@ -28,9 +28,9 @@ export default function ViralNation() {
       <div className='flex flex-col p-8 border-2 border-gray-500 rounded'>
         <h4 className='font-semibold text-xl'>TL;DR</h4>
         <p className='text-lg font-light'>In my first role, I encountered numerous challenges but also reaped immense learnings. My journey taught me how to manage an overwhelming workload, navigate through ambiguous requirements, and adapt to ever-changing demands of upper management.</p>
-        <div className='flex justify-end'>
+        {/* <div className='flex justify-end'>
           <button className='border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-100'>I do not care, show me the visuals</button>
-        </div>
+        </div> */}
       </div>
       {/* Body Section */}
       <body className='flex flex-col gap-12'>

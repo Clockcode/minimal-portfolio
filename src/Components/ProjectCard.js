@@ -5,7 +5,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles }
     <a href={url}>
       <div className={styles.card} >
         <div className={styles.imgDiv}>
-          <img src={imgURL} alt={alt} />
+          <img src={imgURL} alt={alt} className='object-cover w-72' />
         </div>
         <h3 >{title}</h3>
         <p>{desc}</p>

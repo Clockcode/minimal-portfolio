@@ -9,7 +9,7 @@
   },
   {
     "url": "/projects/youtubeanalyzer",
-    "imgURL": "youtube-analyzer-widget.png",
+    "imgURL": "analyzer_cover.png",
     "alt": "Youtube Analyzer extension image",
     "title": "Youtube Analyzer",
     "desc": "Chrome extension that summarizes comments using chatGPT and displays it in short form.",

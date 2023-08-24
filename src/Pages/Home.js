@@ -4,10 +4,11 @@ import ytImage from "../Assets/Images/youtube-analyzer-widget.png"
 import vnLogo from "../Assets/Images/vn-logo.png"
 import profileImage from "../Assets/Images/profile-image.png"
 import Projects from "../data/Projects.json"
+import coverImage from "../Assets/Images/analyzer_cover.png"
 export default function Home() {
   // Update the imgURL property with the imported images
   Projects[0].imgURL = vnLogo;
-  Projects[1].imgURL = ytImage;
+  Projects[1].imgURL = coverImage;
   return (
     <div className="flex flex-col font-sans">
       <div className='flex flex-col w-1/2 mx-auto'>
@@ -19,7 +20,7 @@ export default function Home() {
           Hey, I'm Cagdas - a digital product designer that enjoys building clean and intuitive designs, based in Toronto.
         </h2>
       </div>
-      <section className='flex gap-6 mx-auto mt-6'>
+      <section className='flex gap-6 mx-auto mt-6 mb-20'>
         {Projects.map((project, index) => (
           <ProjectCard {...project} key={index}></ProjectCard>
         ))}
