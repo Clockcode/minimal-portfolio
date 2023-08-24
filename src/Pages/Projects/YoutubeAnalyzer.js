@@ -1,5 +1,22 @@
 import React from 'react'
 import coverImage from "../../Assets/Images/analyzer_cover.png"
+import colorPalette from "../../Assets/Images/color_palette.png"
+import extension from "../../Assets/Images/extension.png"
+import logo from "../../Assets/Images/logo.png"
+import website from "../../Assets/Images/website.png"
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+
+export const ZoomImg = (src, alt) => (
+  <Zoom>
+    <img
+      alt="That Wanaka Tree, New Zealand by Laura Smetsers"
+      src={extension}
+      width="500"
+    />
+  </Zoom>
+)
+
 export default function YoutubeAnalyzer() {
   return (
     <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
@@ -55,10 +72,34 @@ export default function YoutubeAnalyzer() {
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>Website & Extension Design</h3>
             <p className='text-lg font-light'>To educate potential users about the extension's benefits and its two pivotal features, I adopted a minimalist design strategy, ensuring that the interface was intuitive and the message clear.</p>
+            <div className='flex h-96 w-full overflow-hidden gap-8'>
+              <div className='w-1/2 h-full'>
+                <Zoom>
+                  <img src={extension} className='w-full h-96 object-contain mx-auto'></img>
+                </Zoom>
+              </div>
+              <div className='w-1/2 h-full'>
+                <Zoom>
+                  <img src={website} className='w-full h-96 object-contain mx-auto'></img>
+                </Zoom>
+              </div>
+            </div>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>Branding</h3>
             <p className='text-lg font-light'>To create a recognizable and relatable brand identity, drawing inspiration from YouTube's iconic color palette, I designed a logo that was both simple for instant recognition and unique in its style.</p>
+            <div className='flex h-96 overflow-hidden gap-8'>
+              <div className='w-1/2 h-full'>
+                <Zoom>
+                  <img src={colorPalette} className='mx-auto h-96 object-contain'></img>
+                </Zoom>
+              </div>
+              <div className='w-1/2 h-full'>
+                <Zoom>
+                  <img src={logo} className='w-full h-96 object-contain mx-auto'></img>
+                </Zoom>
+              </div>
+            </div>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>Front-End Development</h3>
@@ -93,7 +134,7 @@ export default function YoutubeAnalyzer() {
             <p className='text-lg font-light'>Challenges are inevitable. Instead of succumbing to stress, it's crucial to believe in the journey, address issues head-on, and keep moving forward.</p>
           </div>
         </div>
-      </body>
-    </div>
+      </body >
+    </div >
   )
 }
