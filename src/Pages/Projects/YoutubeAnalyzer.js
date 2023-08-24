@@ -7,15 +7,6 @@ import website from "../../Assets/Images/website.png"
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
-export const ZoomImg = (src, alt) => (
-  <Zoom>
-    <img
-      alt="That Wanaka Tree, New Zealand by Laura Smetsers"
-      src={extension}
-      width="500"
-    />
-  </Zoom>
-)
 
 export default function YoutubeAnalyzer() {
   return (
@@ -75,12 +66,12 @@ export default function YoutubeAnalyzer() {
             <div className='flex h-96 w-full overflow-hidden gap-8'>
               <div className='w-1/2 h-full'>
                 <Zoom>
-                  <img src={extension} className='w-full h-96 object-contain mx-auto'></img>
+                  <img src={extension} alt='extension interface' className='w-full h-96 object-contain mx-auto'></img>
                 </Zoom>
               </div>
               <div className='w-1/2 h-full'>
                 <Zoom>
-                  <img src={website} className='w-full h-96 object-contain mx-auto'></img>
+                  <img src={website} alt='full website' className='w-full h-96 object-contain mx-auto'></img>
                 </Zoom>
               </div>
             </div>
@@ -91,12 +82,12 @@ export default function YoutubeAnalyzer() {
             <div className='flex h-96 overflow-hidden gap-8'>
               <div className='w-1/2 h-full'>
                 <Zoom>
-                  <img src={colorPalette} className='mx-auto h-96 object-contain'></img>
+                  <img src={colorPalette} alt='color palette' className='mx-auto h-96 object-contain'></img>
                 </Zoom>
               </div>
               <div className='w-1/2 h-full'>
                 <Zoom>
-                  <img src={logo} className='w-full h-96 object-contain mx-auto'></img>
+                  <img src={logo} alt='youtube analyzer logo' className='w-full h-96 object-contain mx-auto'></img>
                 </Zoom>
               </div>
             </div>

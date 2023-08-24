@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectCard from '../Components/ProjectCard';
-import ytImage from "../Assets/Images/youtube-analyzer-widget.png"
 import vnLogo from "../Assets/Images/vn-logo.png"
 import profileImage from "../Assets/Images/profile-image.png"
 import Projects from "../data/Projects.json"
