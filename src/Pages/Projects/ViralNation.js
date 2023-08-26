@@ -1,13 +1,26 @@
 import React from 'react'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 import coverImage from "../../Assets/Images/vn_cover.jpg"
+import designKit from "../../Assets/Images/DesignKit.png"
+import dev1 from "../../Assets/Images/Dev01.png"
+import dev2 from "../../Assets/Images/Dev02.png"
+import buyermanage from "../../Assets/Images/BuyerManagement.jpg"
+import talentmanage from "../../Assets/Images/TalentManagement.jpg"
+import shortlist from "../../Assets/Images/Shortlist.jpg"
+import mediakit from "../../Assets/Images/MediaKit.jpg"
+import mediakit2 from "../../Assets/Images/MediaKit2.jpg"
 export default function ViralNation() {
   return (
     <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
-      <div className='h-96 overflow-hidden rounded-xl'>
-        <img className='w-full bg-cover object-cover bg-top -mt-28' src={coverImage} alt='viral nation cover'></img>
-      </div>
       <div className='flex flex-col gap-8'>
-        <h1 className='font-semibold text-4xl'>My Journey at Viral Nation</h1>
+        <div className='flex flex-col gap-1'>
+          <h1 className='font-regular text-4xl text-gray-800'>Creator_OS</h1>
+          <h2 className='font-light text-2xl text-gray-600'>Discover Creators & Manage Deals</h2>
+        </div>
+        <div className='h-96 overflow-hidden rounded-xl'>
+          <img className='w-full bg-cover object-cover bg-top -mt-28' src={coverImage} alt='viral nation cover'></img>
+        </div>
         <div className='flex justify-between flex-row'>
           <div className='flex flex-col'>
             <h4 className='font-semibold text-xl'>Contribution</h4>
@@ -20,7 +33,7 @@ export default function ViralNation() {
           </div>
           <div className='flex flex-col'>
             <h4 className='font-semibold text-xl'>Timeline</h4>
-            <p className='text-lg font-light'>Aug 2021 - Aug 2023</p>
+            <p className='text-lg font-light'>Aug 2021 - Current</p>
           </div>
         </div>
       </div>
@@ -53,13 +66,43 @@ export default function ViralNation() {
             <h3 className='text-blue-800'>Feature Ideation</h3>
             <p className='text-lg font-light'>I played a pivotal role in brainstorming and conceptualizing new features that enhanced user experience and added value to our products. Not all of my ideas were accepted or moved on with but I tried my best to challenge some ideas and think differently.</p>
           </div>
-          <div className='flex flex-col gap-4'>
+          <div className='flex flex-col gap-4 relative'>
             <h3 className='text-blue-800'>Visual Design</h3>
             <p className='text-lg font-light'>My designs were not just about aesthetics; they were user-centric, ensuring that our audience had a seamless experience, whether on our website or app.</p>
+            <Zoom>
+              <img src={designKit} alt='design kit assets' className='w-full h-full'></img>
+            </Zoom>
+            <Zoom>
+              <img src={talentmanage} alt='talent management home page' className='w-full h-full'></img>
+            </Zoom>
+            <Zoom>
+              <img src={buyermanage} alt='buyer management home page' className='w-full h-full'></img>
+            </Zoom>
+            <Zoom>
+              <img src={shortlist} alt='shortlist example main page' className='w-full h-full'></img>
+            </Zoom>
+            <Zoom>
+              <img src={mediakit} alt='mediakit cover page' className='w-full h-full'></img>
+            </Zoom>
+            <Zoom>
+              <img src={mediakit2} alt='mediakit analytics page' className='w-full h-full'></img>
+            </Zoom>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>Development</h3>
             <p className='text-lg font-light'>Beyond design, I also contributed to the development aspect, ensuring that our designs were translated accurately into functional web pages.</p>
+            <div className='flex w-full gap-20'>
+              <p className='text-lg font-light mt-6 w-2/3'>Published and maintained an icon NPM package that was used company wide.</p>
+              <Zoom>
+                <img src={dev1} alt='npm profile screenshot' className='w-full'></img>
+              </Zoom>
+            </div>
+            <div className='flex w-full gap-20'>
+              <p className='text-lg font-light mt-6 w-2/3'>Contributed to multiple repositories by fixing visual inconsistencies when developers were pulled for new features.<br /> <br /> I adhered to code standards and PR guidelines.</p>
+              <Zoom>
+                <img src={dev2} alt='github profile screenshot' className='w-full'></img>
+              </Zoom>
+            </div>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800'>UX Writing</h3>

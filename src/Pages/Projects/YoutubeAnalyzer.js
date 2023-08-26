@@ -12,7 +12,7 @@ export default function YoutubeAnalyzer() {
   return (
     <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
       <div className='h-96 overflow-hidden rounded-xl'>
-        <img className='w-full bg-cover object-cover bg-top' src={coverImage} alt='viral nation cover'></img>
+        <img className='w-full bg-cover object-cover bg-top' src={coverImage} alt='youtube analyzer cover'></img>
       </div>
       <div className='flex flex-col gap-8'>
         <h1 className='font-semibold text-4xl'>Youtube Analyzer - Chrome Extension</h1>

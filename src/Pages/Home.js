@@ -10,7 +10,7 @@ export default function Home() {
   Projects[1].imgURL = coverImage;
   return (
     <div className="flex flex-col font-sans">
-      <div className='flex flex-col w-1/2 mx-auto'>
+      <div className='flex flex-col w-2/3 lg:w-1/2 mx-auto'>
         <div className='flex h-auto w-full mx-auto'>
           <img className='bg-center mx-auto' src={profileImage} alt="profile" />
         </div>
@@ -19,7 +19,7 @@ export default function Home() {
           Hey, I'm Cagdas - a digital product designer that enjoys building clean and intuitive designs, based in Toronto.
         </h2>
       </div>
-      <section className='flex gap-6 mx-auto mt-6 mb-20'>
+      <section className='flex flex-col md:flex-row gap-6 mx-auto mt-6 mb-20'>
         {Projects.map((project, index) => (
           <ProjectCard {...project} key={index}></ProjectCard>
         ))}
