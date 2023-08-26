@@ -9,7 +9,7 @@ import ViralNation from "./Pages/Projects/ViralNation"
 import YoutubeAnalyzer from "./Pages/Projects/YoutubeAnalyzer"
 export default function App() {
   return (
-    <div>
+    <div className="bg-gray-100">
       <BrowserRouter>
         <Header />
         <Routes>

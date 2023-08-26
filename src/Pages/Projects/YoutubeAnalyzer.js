@@ -11,11 +11,15 @@ import 'react-medium-image-zoom/dist/styles.css'
 export default function YoutubeAnalyzer() {
   return (
     <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
-      <div className='h-96 overflow-hidden rounded-xl'>
-        <img className='w-full bg-cover object-cover bg-top' src={coverImage} alt='youtube analyzer cover'></img>
-      </div>
       <div className='flex flex-col gap-8'>
-        <h1 className='font-semibold text-4xl'>Youtube Analyzer - Chrome Extension</h1>
+        <div className='flex flex-col gap-1'>
+          <h1 className='font-regular text-4xl text-gray-800'>Youtube Analyzer</h1>
+          <h2 className='font-light text-2xl text-gray-600'>Time-saving extension. Skip the fluff, get to the point.</h2>
+        </div>
+
+        <div className='h-96 overflow-hidden rounded-xl'>
+          <img className='w-full bg-cover object-cover bg-top' src={coverImage} alt='youtube analyzer cover'></img>
+        </div>
         <div className='flex justify-between flex-row'>
           <div className='flex flex-col'>
             <h4 className='font-semibold text-xl'>Contribution</h4>
