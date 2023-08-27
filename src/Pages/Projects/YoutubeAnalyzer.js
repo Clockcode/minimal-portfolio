@@ -13,9 +13,14 @@ export default function YoutubeAnalyzer() {
     <div className='flex flex-col max-w-4xl mx-auto gap-12 mt-8'>
       {/* Header Section */}
       <div className='flex flex-col gap-8'>
-        <div className='flex flex-col gap-1 mx-auto sm:mx-12 lg:mx-0'>
-          <h1 className='font-regular text-4xl text-gray-800 text-center sm:text-left'>Youtube Analyzer</h1>
-          <h2 className='font-light text-2xl text-gray-600 text-center sm:text-left'>Skip the fluff, get to the point.</h2>
+        <div className='flex flex-col sm:flex-row'>
+          <div className='flex flex-col gap-1 mx-auto sm:mx-12 lg:mx-0 sm:w-3/5'>
+            <h1 className='font-regular text-4xl text-gray-800 text-center sm:text-left'>Youtube Analyzer</h1>
+            <h2 className='font-light text-2xl text-gray-600 text-center sm:text-left'>Skip the fluff, get to the point.</h2>
+          </div>
+          <div className='flex justify-center mx-auto mt-8 mb-1 sm:justify-end sm:mt-4 sm:w-2/5'>
+            <a className='bg-blue-500 text-white rounded h-12 sm:align-middle text-center px-10 py-3 sm:m-0' href='https://youtubeanalyzer.tech'>Go to Website</a>
+          </div>
         </div>
         <div className='w-full h-full bg-cover object-cover bg-top lg:rounded-xl rounded-none'>
           <img className='w-full bg-cover object-cover bg-top h-96 md:overflow-hidden lg:rounded-xl' src={coverImage} alt='youtube analyzer cover'></img>
