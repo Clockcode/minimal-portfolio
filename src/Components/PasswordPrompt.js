@@ -25,6 +25,7 @@ const PasswordPrompt = ({ correctPassword, onSuccess }) => {
                         placeholder="Enter password"
                         className="w-full p-2 border rounded"
                     />
+                    {error && <p className="my-0 text-red-500 text-left">Incorrect password!</p>}
                     <button
                         type="submit"
                         className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
@@ -32,7 +33,7 @@ const PasswordPrompt = ({ correctPassword, onSuccess }) => {
                         Submit
                     </button>
                 </form>
-                {error && <p className="mt-4 text-red-500 text-center">Incorrect password!</p>}
+                <div className='flex flex-col' ><p className='text-center  mt-8 mb-2'>Don't know the password?</p> <a className='w-full p-2 text-blue-500 rounded hover:font-regular hover:underline text-center' href='https://linkedin.com/in/cagdasm'>Ask me on Linkedin</a></div>
             </div>
         </div>
     );
