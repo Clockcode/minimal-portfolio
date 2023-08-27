@@ -10,35 +10,35 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 export default function YoutubeAnalyzer() {
   return (
-    <div className='flex flex-col max-w-5xl mx-auto gap-12 mt-8'>
+    <div className='flex flex-col max-w-4xl mx-auto gap-12 mt-8'>
+      {/* Header Section */}
       <div className='flex flex-col gap-8'>
-        <div className='flex flex-col gap-1'>
-          <h1 className='font-regular text-4xl text-gray-800'>Youtube Analyzer</h1>
-          <h2 className='font-light text-2xl text-gray-600'>Time-saving extension. Skip the fluff, get to the point.</h2>
+        <div className='flex flex-col gap-1 mx-auto sm:mx-12 lg:mx-0'>
+          <h1 className='font-regular text-4xl text-gray-800 text-center sm:text-left'>Youtube Analyzer</h1>
+          <h2 className='font-light text-2xl text-gray-600 text-center sm:text-left'>Skip the fluff, get to the point.</h2>
         </div>
-
-        <div className='h-96 overflow-hidden rounded-xl'>
-          <img className='w-full bg-cover object-cover bg-top' src={coverImage} alt='youtube analyzer cover'></img>
+        <div className='w-full h-full bg-cover object-cover bg-top lg:rounded-xl rounded-none'>
+          <img className='w-full bg-cover object-cover bg-top h-96 md:overflow-hidden lg:rounded-xl' src={coverImage} alt='youtube analyzer cover'></img>
         </div>
-        <div className='flex justify-between flex-row'>
-          <div className='flex flex-col'>
+        <div className='flex flex-col gap-8 justify-between sm:flex-row sm:mx-8 md:gap-4 lg:mx-0'>
+          <div className='flex flex-col mx-auto w-full text-center md:text-left md:mx-auto'>
             <h4 className='font-semibold text-xl'>Contribution</h4>
-            <ul className='flex flex-col gap-1 ml-6'>
-              <li className='text-lg font-light list-disc'>Branding</li>
-              <li className='text-lg font-light list-disc'>Website & Extension UI Design</li>
-              <li className='text-lg font-light list-disc'>Website & Extension Development</li>
+            <ul className='flex flex-col gap-1'>
+              <li className='text-lg font-light'>Branding</li>
+              <li className='text-lg font-light'>Website & Extension UI Design</li>
+              <li className='text-lg font-light'>Website & Extension Development</li>
             </ul>
           </div>
-          <div className='flex flex-col'>
-            <h4 className='font-semibold text-xl'>Technologies</h4>
-            <ul className='flex flex-col gap-1 ml-6'>
-              <li className='text-lg font-light list-disc'>Python</li>
-              <li className='text-lg font-light list-disc'>Gatsby</li>
-              <li className='text-lg font-light list-disc'>React</li>
-              <li className='text-lg font-light list-disc'>MySQL</li>
+          <div className='flex flex-col mx-auto w-full text-center md:text-center md:ml-20'>
+            <h4 className='font-semibold text-xl md:text-left'>Technologies</h4>
+            <ul className='flex flex-col gap-1 md:text-left'>
+              <li className='text-lg font-light'>Python</li>
+              <li className='text-lg font-light'>Gatsby</li>
+              <li className='text-lg font-light'>React</li>
+              <li className='text-lg font-light'>MySQL</li>
             </ul>
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col mx-auto w-full text-center md:text-right md:mx-auto'>
             <h4 className='font-semibold text-xl'>Timeline</h4>
             <p className='text-lg font-light'>Aug 2022 - Aug 2023</p>
           </div>
@@ -53,7 +53,7 @@ export default function YoutubeAnalyzer() {
         </div>
       </div> */}
       {/* Body Section */}
-      <body className='flex flex-col gap-12'>
+      <body className='flex flex-col gap-12 mx-8 lg:mx-0'>
         {/* Experience Details Section */}
         <div className='flex flex-col gap-6'>
           <h2 className='font-semibold text-2xl'>The Project details</h2>
@@ -65,7 +65,7 @@ export default function YoutubeAnalyzer() {
         <div className='flex flex-col gap-6'>
           <h2 className='font-semibold text-2xl'>Contributions</h2>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Website & Extension Design</h3>
+            <h3 className='text-xl text-blue-800'>Website & Extension Design</h3>
             <p className='text-lg font-light'>To educate potential users about the extension's benefits and its two pivotal features, I adopted a minimalist design strategy, ensuring that the interface was intuitive and the message clear.</p>
             <div className='flex h-96 w-full overflow-hidden gap-8'>
               <div className='w-1/2 h-full'>
@@ -81,7 +81,7 @@ export default function YoutubeAnalyzer() {
             </div>
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Branding</h3>
+            <h3 className='text-xl text-blue-800'>Branding</h3>
             <p className='text-lg font-light'>To create a recognizable and relatable brand identity, drawing inspiration from YouTube's iconic color palette, I designed a logo that was both simple for instant recognition and unique in its style.</p>
             <div className='flex h-96 overflow-hidden gap-8'>
               <div className='w-1/2 h-full'>
@@ -97,7 +97,7 @@ export default function YoutubeAnalyzer() {
             </div>
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Front-End Development</h3>
+            <h3 className='text-xl text-blue-800'>Front-End Development</h3>
             <p className='text-lg font-light'>To translate the design into a functional, responsive website, despite my reservations, I opted for MUI for its development efficiency. Throughout the process, I emphasized responsiveness to ensure optimal user experience across devices.</p>
           </div>
         </div>
@@ -105,15 +105,15 @@ export default function YoutubeAnalyzer() {
         <div className='flex flex-col gap-6'>
           <h2 className='font-semibold text-2xl'>Challenges Faced</h2>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Project Management</h3>
+            <h3 className='text-xl text-blue-800'>Project Management</h3>
             <p className='text-lg font-light'>The absence of a structured task management system led to confusion and inefficiencies.Recognizing the need for organization, we soon realized that even small teams benefit from task management tools.</p>
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Scope Creep</h3>
+            <h3 className='text-xl text-blue-800'>Scope Creep</h3>
             <p className='text-lg font-light'>Our enthusiasm often led us to add features prematurely, resulting in time losses and moments of demotivation. A strategic step back allowed us to define our Minimum Viable Product (MVP) and refocus our efforts on essential features.</p>
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Procrastination</h3>
+            <h3 className='text-xl text-blue-800'>Procrastination</h3>
             <p className='text-lg font-light'>Like many, we faced the universal challenge of procrastination. Implementing strict deadlines and holding weekly progress meetings instilled a sense of accountability. The potential embarrassment of not showcasing progress became a driving force.</p>
           </div>
         </div>
@@ -121,11 +121,11 @@ export default function YoutubeAnalyzer() {
         <div className='flex flex-col gap-6 mb-28'>
           <h2 className='font-semibold text-2xl'>Takeaways</h2>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Prioritize and Focus</h3>
+            <h3 className='text-xl text-blue-800'>Prioritize and Focus</h3>
             <p className='text-lg font-light'>Regardless of team size, a structured task management system is invaluable.</p>
           </div>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800'>Trust the Process</h3>
+            <h3 className='text-xl text-blue-800'>Trust the Process</h3>
             <p className='text-lg font-light'>Challenges are inevitable. Instead of succumbing to stress, it's crucial to believe in the journey, address issues head-on, and keep moving forward.</p>
           </div>
         </div>

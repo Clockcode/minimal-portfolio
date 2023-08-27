@@ -25,6 +25,13 @@ export default function ViralNation() {
       />
     );
   }
+  const handleClickScroll = () => {
+    const element = document.getElementById('visuals');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className='flex flex-col max-w-4xl mx-auto gap-12 mt-8'>
       {/* Header Section */}
@@ -56,9 +63,9 @@ export default function ViralNation() {
       <div className='flex flex-col p-8 border-2 m-4 lg:m-0 border-gray-500 rounded'>
         <h4 className='font-semibold text-xl'>TL;DR</h4>
         <p className='text-lg font-light'>In my first role, I encountered numerous challenges but also reaped immense learnings. My journey taught me how to manage an overwhelming workload, navigate through ambiguous requirements, and adapt to ever-changing demands of upper management.</p>
-        {/* <div className='flex justify-end'>
-          <button className='border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-100'>I do not care, show me the visuals</button>
-        </div> */}
+        <div className='flex justify-end'>
+          <button onClick={handleClickScroll} className='border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-100'>I do not care, show me the visuals</button>
+        </div>
       </div>
       {/* Cubes Section */}
       <div className='flex flex-col gap-12 lg:flex-row'>
@@ -91,26 +98,32 @@ export default function ViralNation() {
             <h3 className='text-blue-800 text-xl'>Feature Ideation</h3>
             <p className='text-lg font-light'>I played a pivotal role in brainstorming and conceptualizing new features that enhanced user experience and added value to our products. Not all of my ideas were accepted or moved on with but I tried my best to challenge some ideas and think differently.</p>
           </div>
-          <div className='flex flex-col gap-4 relative'>
+          <div className='flex flex-col gap-4 relative' id='visuals'>
             <h3 className='text-blue-800 text-xl'>Visual Design</h3>
             <p className='text-lg font-light'>My designs were not just about aesthetics; they were user-centric, ensuring that our audience had a seamless experience, whether on our website or app.</p>
             <Zoom>
               <img src={designKit} alt='design kit assets' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Design Kit</p>
             </Zoom>
             <Zoom>
               <img src={talentmanage} alt='talent management home page' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Talent Management Home Page</p>
             </Zoom>
             <Zoom>
               <img src={buyermanage} alt='buyer management home page' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Buyer Management Home Page</p>
             </Zoom>
             <Zoom>
               <img src={shortlist} alt='shortlist example main page' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Shortlist Profile Tab</p>
             </Zoom>
             <Zoom>
               <img src={mediakit} alt='mediakit cover page' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>MediaKit Cover Page</p>
             </Zoom>
             <Zoom>
               <img src={mediakit2} alt='mediakit analytics page' className='w-full h-full'></img>
+              <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>MediaKit Overall Metrics</p>
             </Zoom>
           </div>
           <div className='flex flex-col gap-4'>
