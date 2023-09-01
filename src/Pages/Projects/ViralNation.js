@@ -72,15 +72,15 @@ export default function ViralNation() {
         <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={problem_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Problem</h4>
-          <p className='text-lg font-light text-center'>Their stand-alone platform, <span className='font-bold text-blue-500'>Influsoft</span> was a slow, feature-bloated product hell that agents hated to use. It was not intuitive and features were not discoverable. It also failed at conveying brand.</p></div>
+          <p className='text-lg font-light text-center'>Their stand-alone platform, <span className='font-bold text-blue-500'>Influsoft</span> was slow didn’t have enough features hence agents hated to use. On top of that, design was not consistent and features were not discoverable. it also didn’t fit close with company’s plan for building an ecosystem of products.</p></div>
         <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={object_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Objective</h4>
-          <p className='text-lg font-light text-center'>My objective was to redesign the whole platform from scratch. Adhering the brand guidelines as well as making it as intuitive to use as possible with extra features like discovering buyers.</p></div>
+          <p className='text-lg font-light text-center'>My objective was to redesign the visual look of the platform adhering the brand guidelines. Improving user experience based on the learnings they have had over the years. Also keeping a consistent look and feel throughout products.</p></div>
         <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={solution_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Solution</h4>
-          <p className='text-lg font-light text-center'>Simplified agent experience, made it easier to find creators and assess them. Also improving buyer experience helped agents vouch for their creators which will result in higher deal completion.</p></div>
+          <p className='text-lg font-light text-center'>Building a comprehensive design system that encapsulates all ecosystem products. Coming up with new features and fixing discoverability features based on agents’ feedback.</p></div>
       </div>
       {/* Body Section */}
       <body className='flex flex-col gap-12 mx-8 lg:mx-0'>
@@ -96,11 +96,11 @@ export default function ViralNation() {
           <h2 className='font-semibold text-2xl'>Contributions to Viral Nation</h2>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>Feature Ideation</h3>
-            <p className='text-lg font-light'>I played a pivotal role in brainstorming and conceptualizing new features that enhanced user experience and added value to our products. Not all of my ideas were accepted or moved on with but I tried my best to challenge some ideas and think differently.</p>
+            <p className='text-lg font-light'>I played a pivotal role in brainstorming and conceptualizing new features that enhanced user experience and added value to our products. Not all of my ideas were accepted or moved on with but I tried my best to challenge status quo and call attention to user.</p>
           </div>
           <div className='flex flex-col gap-4 relative' id='visuals'>
             <h3 className='text-blue-800 text-xl'>Visual Design</h3>
-            <p className='text-lg font-light'>My designs were not just about aesthetics; they were user-centric, ensuring that our audience had a seamless experience, whether on our website or app.</p>
+            <p className='text-lg font-light'>My designs were not just about aesthetics; they were user-centric, ensuring that our audience had a seamless experience, whether on our website or app. Collaborating with my teammates and making quick and valuable decisions were a crucial aspect of making user experience consistent and visually appealing.</p>
             <Zoom>
               <img src={designKit} alt='design kit assets' className='w-full h-full'></img>
               <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Design Kit</p>
@@ -154,35 +154,31 @@ export default function ViralNation() {
         {/* Challenges Section */}
         <div className='flex flex-col gap-6'>
           <h2 className='font-semibold text-2xl'>Challenges Faced</h2>
-          <p className='text-lg font-light'>Every company has its’ own problems. Problems differ but there is not much to do for you other than defining the problems and trying to fix it one by one. That is what I’ve tried to do. Some worked some didn’t. Here are some of them.</p>
+          <p className='text-lg font-light'>Every company has its’ own problems. I believe designers’ job is to define the problems and plan ways to mitigate them. That is what I’ve tried to do. Some worked some didn’t. Here are some of them I’ve worked on and was successful.</p>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>Ambiguous Requirements</h3>
-            <p className='text-lg font-light'>Startups are known for their dynamic nature. Often, I found myself working with requirements that were not clearly defined. This demanded flexibility and a proactive approach to seek clarity.</p>
+            <p className='text-lg font-light'>Startups are known for their dynamic nature. Often, I found myself working with requirements that were not clearly defined. This demanded flexibility and a proactive approach to seek clarity. This meant constantly asking questions, seeking clarifications, and ensuring I was on the right trajectory. Regular feedback became my compass.</p>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>Constant Changes</h3>
-            <p className='text-lg font-light'>In a fast-paced environment, change is the only constant. Adapting to new requirements, even mid-project, became a regular affair. This taught me the importance of adaptability and resilience. I also learned that documenting change avoids going on circles and not innovating.</p>
+            <p className='text-lg font-light'>In a fast-paced environment, change is the only constant. Adapting to new requirements, even mid-project, became a regular affair. This taught me the importance of adaptability and resilience. I also learned that documenting changes and keeping old design files organized avoids going on circles with a flow or page.</p>
           </div>
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>Tight Deadlines</h3>
-            <p className='text-lg font-light'>One of the most formidable challenges I encountered at Viral Nation was the incredibly short time frames provided for design deliverables. In a startup environment, where agility and speed are often prioritized, I frequently found myself racing against the clock.</p>
+            <p className='text-lg font-light'>One of the most formidable challenges I encountered at Viral Nation was the incredibly short time frames provided for design deliverables. In a startup environment, where agility and speed are often prioritized, I frequently found myself racing against the clock. In such scenarios, it's vital to prioritize tasks based on their urgency. Focusing on one task at a time not only boosts efficiency but also prevents the feeling of being swamped.</p>
           </div>
         </div>
         {/* Takeaways Section */}
         <div className='flex flex-col gap-6 mb-28'>
           <h2 className='font-semibold text-2xl'>Takeaways</h2>
-          <p className='text-lg font-light'>My time at Viral Nation was a steep learning curve. The initial months tested my patience and resilience, but as the days rolled on, I formulated some guiding principles that not only helped me meet expectations but also exceed them.</p>
+          <p className='text-lg font-light'>My time at Viral Nation was a steep learning curve. The initial months tested my patience and resilience, but as the days rolled on, principles I formulated not only helped me meet expectations but also exceed them.</p>
           <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800 text-xl'>Prioritize and Focus</h3>
-            <p className='text-lg font-light'>In a compact design team, multitasking becomes the norm. At one juncture, I found myself juggling three projects simultaneously. In such scenarios, it's imperative to prioritize tasks based on their urgency. Focusing on one task at a time not only boosts efficiency but also prevents the feeling of being swamped.</p>
-          </div>
-          <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800 text-xl'>Establish Continuous Communication</h3>
-            <p className='text-lg font-light'>I realized that to truly excel, I needed to align with the company's vision and expectations. This meant constantly asking questions, seeking clarifications, and ensuring I was on the right trajectory. Regular feedback became my compass.</p>
-          </div>
-          <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800 text-xl'>Be Open to Feedback</h3>
-            <p className='text-lg font-light'>Design critiques can be tough, especially when they come from non-design stakeholders. Comments like "This doesn't look right" or "Can you make it pop?" were frequent. While these statements were vague, they indicated an underlying issue. My role was to decode these comments, identify the core problem, and address it specifically. Instead of getting defensive or trying to revamp everything, I learned to hone in on the exact concern and rectify it.</p>
+            <div className='flex flex-col gap-4'>
+              <h3 className='text-blue-800 text-xl'>Be Open to Feedback</h3>
+              <p className='text-lg font-light'>Design critiques can be tough, especially when they come from non-design stakeholders. Comments like "This doesn't look right" or "Can you make it pop?" were frequent. While these statements are vague, they indicate an underlying issue. My role is to decode these comments, identify the core problem, and address it specifically. Instead of getting defensive or trying to revamp everything, I learned to hone in on the exact concern and rectify it.</p>
+            </div>
+            <h3 className='text-blue-800 text-xl'>Don't Be Afraid yo Try New Stuff</h3>
+            <p className='text-lg font-light'>Whether it is animation, illustration or a strange layout, trying something new is hard at first but it is fun too. I learned to enjoy the process and cherish with small wins.</p>
           </div>
         </div>
       </body>

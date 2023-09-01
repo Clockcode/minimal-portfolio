@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectCard from '../Components/ProjectCard';
-import vnLogo from "../Assets/Images/vn-logo.png"
+import vnLogo from "../Assets/Images/CreatorOS_Logo.png"
 import profileImage from "../Assets/Images/profile-image.png"
 import Projects from "../data/Projects.json"
 import coverImage from "../Assets/Images/analyzer_cover.png"
