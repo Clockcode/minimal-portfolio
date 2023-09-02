@@ -8,15 +8,15 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
         </div>
         <h3 className='text-2xl font-medium mt-2 text-gray-600 group-hover:text-gray-900'>{title}</h3>
         <p className='text-base font-normal mt-1 text-gray-500'>{desc}</p>
-        <div className='flex flex-col md:flex-row w-full gap-3'>
-          {appLink ? <a className='bg-blue-500 text-white rounded h-9 justify-center align-middle text-center px-4 pt-1.5 w-full' href={appLink}>Go to Extension</a> : <div className=''></div>}
-          {websiteLink ? <a className='border-blue-500 border-2 text-blue-500 rounded h-9 justify-center align-middle text-center px-4 pt-1 w-full' href={websiteLink}>Go to Website</a> : <div className='h-9'></div>}
-        </div>
-        <ul className='flex gap-3 justify-start p-0 m-0 align-bottom'>
+        <ul className='flex gap-3 justify-start p-0 mb-4 -mt-2 align-bottom'>
           {subtitles.map((subtitle, index) => (
             <li className='text-sm font-light text-gray-700 list-none mt-4' key={index}>{subtitle}</li>
           ))}
         </ul>
+        <div className='flex flex-col md:flex-row w-full gap-3'>
+          {appLink ? <a className='bg-blue-500 text-white rounded h-9 justify-center align-middle text-center px-4 pt-1.5 w-full' href={appLink}>Go to Extension</a> : <div className=''></div>}
+          {websiteLink ? <a className='border-blue-500 border-2 text-blue-500 rounded h-9 justify-center align-middle text-center px-4 pt-1 w-full' href={websiteLink}>Go to Website</a> : <div className='h-9'></div>}
+        </div>
       </div>
     </a>
   )
