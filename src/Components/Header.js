@@ -11,7 +11,7 @@ export default function Header() {
       <Link to="/" className='sm:w-1/4 w-full sm:mb-0 mb-4'>
         <h1 className="text-center text-xl font-normal">Chadash.me</h1>
       </Link>
-      <div className="space-x-4 flex w-full gap-3 sm:w-1/4 justify-center">
+      <div className="space-x-4 flex w-full gap-3 sm:w-2/4 justify-center">
         <a href="https://www.linkedin.com/in/cagdasm/" target="_blank" rel="noopener noreferrer">
           <LinkedinIcon className="h-6 fill-current" />
         </a>
@@ -24,6 +24,9 @@ export default function Header() {
         </a>
         <a href="https://www.youtube.com/channel/UCItdJQjCFABuVKCmieFrUDA" target="_blank" rel="noopener noreferrer">
           <YoutubeIcon className="h-6 fill-current" />
+        </a>
+        <a href="https://drive.google.com/file/d/1fNL3hmFfcHLgJi7uLe-3wl99x_KqjTbP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Resume
         </a>
       </div>
     </nav>
