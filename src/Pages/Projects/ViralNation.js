@@ -129,14 +129,14 @@ export default function ViralNation() {
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>Development</h3>
             <p className='text-lg font-light'>Beyond design, I also contributed to the development aspect, ensuring that our designs were translated accurately into functional web pages.</p>
-            <div className='flex w-full gap-20'>
-              <p className='text-lg font-light mt-6 w-2/3'>Published and maintained an icon NPM package that was used company wide.</p>
+            <div className='flex flex-col w-full gap-20'>
+              <p className='text-lg font-light mt-4 -mb-10 '>Published and maintained an icon NPM package that was used company wide.</p>
               <Zoom>
                 <img src={dev1} alt='npm profile screenshot' className='w-full'></img>
               </Zoom>
             </div>
-            <div className='flex w-full gap-20'>
-              <p className='text-lg font-light mt-6 w-2/3'>Contributed to multiple repositories by fixing visual inconsistencies when developers were pulled for new features.<br /> <br /> I adhered to code standards and PR guidelines.</p>
+            <div className='flex flex-col w-full gap-20'>
+              <p className='text-lg font-light mt-4 -mb-10 '>Contributed to multiple repositories by fixing visual inconsistencies when developers were pulled for new features. I adhered to code standards and PR guidelines.</p>
               <Zoom>
                 <img src={dev2} alt='github profile screenshot' className='w-full'></img>
               </Zoom>
