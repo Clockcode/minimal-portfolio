@@ -24,25 +24,6 @@ export default function Home() {
           <ProjectCard {...project} key={index}></ProjectCard>
         ))}
       </section>
-      {/* <section className='flex my-8 gap-4 w-4/5 mx-auto'>
-        <div className='flex gap-8 flex-col w-1/2 mx-auto'>
-          <h3 className='font-bold'>About</h3>
-          <div className='flex flex-col mr-8 gap-2'>
-            <p className='paragraph-section'>
-              Born and raised in Turkey. Been living in Toronto for the past 4 years.
-            </p>
-            <p className='paragraph-section'>
-              Background in programming helped me come up with viable solutions that help grow the business and create simple designs that give users confidence.
-            </p>
-            <p className='paragraph-section'>
-              In my spare time, you can find me reading stuff, writing stuff, thinking about peculiarity of life and travelling.
-            </p>
-            <p className='paragraph-section'>
-              As of 2023, I live in Toronto, the most populated city in Canada and enjoy being warm at home or freezing outside.
-            </p>
-          </div>
-        </div>
-      </section> */}
     </div >
   );
 }

@@ -4,7 +4,7 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
     <a href={url} className='group hover:shadow-md hover:border-blue-200 border-2 p-4 lg:p-8 hover:bg-blue-100 rounded-[16px] w-4/5 md:w-2/3 lg:w-2/5 mx-auto lg:mx-0'>
       <div className='flex flex-col w-full gap-1' >
         <div className='w-full h-80 flex justify-center bg-[#131313] rounded-[12px]'>
-          <img src={imgURL} alt={alt} className='object-contain w-full bg-center rounded-[12px]' />
+          <img src={imgURL} alt={alt} className='object-cover w-full bg-center rounded-[12px]' />
         </div>
         <h3 className='text-2xl font-medium mt-2 text-gray-600 group-hover:text-gray-900'>{title}</h3>
         <p className='text-base font-normal mt-1 text-gray-500'>{desc}</p>

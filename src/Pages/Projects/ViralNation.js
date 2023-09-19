@@ -14,6 +14,8 @@ import mediakit2 from "../../Assets/Images/MediaKit2.jpg"
 import object_cube from "../../Assets/Images/object_cube.webp"
 import problem_cube from "../../Assets/Images/problem_cube.webp"
 import solution_cube from "../../Assets/Images/solution_cube.webp"
+import talent_flow from "../../Assets/Images/talent_agent_deal.png"
+import competitive_analysis from "../../Assets/Images/competitive_analysis.png"
 export default function ViralNation() {
   const [authenticated, setAuthenticated] = useState(false);
 
@@ -41,7 +43,7 @@ export default function ViralNation() {
           <h2 className='font-light text-2xl text-gray-600 text-center sm:text-left'>Discover Creators & Manage Deals</h2>
         </div>
         <div className='h-96 md:overflow-hidden lg:rounded-xl'>
-          <img className='w-full h-full bg-cover object-cover bg-top md:-mt-14 lg:-mt-16' src={coverImage} alt='viral nation cover'></img>
+          <img className='w-full h-full bg-cover object-cover bg-top md:-mt-14' src={coverImage} alt='viral nation cover'></img>
         </div>
         <div className='flex justify-between sm:flex-row sm:mx-8 md:-mt-10 lg:-mt-14 lg:mx-0'>
           <div className='flex flex-col mx-auto w-1/2 text-center md:text-left md:mx-0'>
@@ -69,18 +71,20 @@ export default function ViralNation() {
       </div>
       {/* Cubes Section */}
       <div className='flex flex-col gap-12 lg:flex-row'>
-        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
+        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w-1/4'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={problem_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Problem</h4>
-          <p className='text-lg font-light text-center'>Their stand-alone platform, <span className='font-bold text-blue-500'>Influsoft</span> was slow didn’t have enough features hence agents hated to use. On top of that, design was not consistent and features were not discoverable. it also didn’t fit close with company’s plan for building an ecosystem of products.</p></div>
-        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
+          <p className='text-lg lg:text-md font-light text-center'>Their stand-alone platform, <span className='font-bold text-blue-500'>Influsoft</span> was slow didn’t have enough features hence agents hated to use. On top of that, design was not consistent and features were not discoverable. it also didn’t fit close with company’s plan for building an ecosystem of products.</p></div>
+        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w-1/4'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={object_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Objective</h4>
-          <p className='text-lg font-light text-center'>My objective was to redesign the visual look of the platform adhering the brand guidelines. Improving user experience based on the learnings they have had over the years. Also keeping a consistent look and feel throughout products.</p></div>
-        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w/14'>
+          <p className='text-lg lg:text-md font-light text-center'>My objective was to redesign the visual look of the platform adhering the brand guidelines. Improving user experience based on the learnings they have had over the years. Also keeping a consistent look and feel throughout products.</p>
+        </div>
+        <div className='w-3/4 md:w-1/2 mx-auto flex flex-col sm:w-1/4'>
           <img className='w-28 mb-2 mx-auto sm:w-36 lg:w-24' src={solution_cube} alt='cube' />
           <h4 className='font-semibold text-xl text-blue-500 mb-3 text-center'>The Solution</h4>
-          <p className='text-lg font-light text-center'>Building a comprehensive design system that encapsulates all ecosystem products. Coming up with new features and fixing discoverability features based on agents’ feedback.</p></div>
+          <p className='text-lg lg:text-md font-light text-center'>Building a comprehensive design system that encapsulates all ecosystem products. Coming up with new features and fixing discoverability features based on agents’ feedback.</p>
+        </div>
       </div>
       {/* Body Section */}
       <body className='flex flex-col gap-12 mx-8 lg:mx-0'>
@@ -98,6 +102,14 @@ export default function ViralNation() {
             <h3 className='text-blue-800 text-xl'>Feature Ideation</h3>
             <p className='text-lg font-light'>I played a pivotal role in brainstorming and conceptualizing new features that enhanced user experience and added value to our products. Not all of my ideas were accepted or moved on with but I tried my best to challenge status quo and call attention to user.</p>
           </div>
+          <Zoom>
+            <img src={talent_flow} alt='talent agency deal lifecycle' className='w-full h-full'></img>
+            <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Talent Flow</p>
+          </Zoom>
+          <Zoom>
+            <img src={competitive_analysis} alt='talent agency deal lifecycle' className='w-full h-full'></img>
+            <p className='text-sm font-light text-center text-gray-400 mb-8 mt-2'>Competitive Analysis</p>
+          </Zoom>
           <div className='flex flex-col gap-4 relative' id='visuals'>
             <h3 className='text-blue-800 text-xl'>Visual Design</h3>
             <p className='text-lg font-light'>My designs were not just about aesthetics; they were user-centric, ensuring that our audience had a seamless experience, whether on our website or app. Collaborating with my teammates and making quick and valuable decisions were a crucial aspect of making user experience consistent and visually appealing.</p>
@@ -145,10 +157,6 @@ export default function ViralNation() {
           <div className='flex flex-col gap-4'>
             <h3 className='text-blue-800 text-xl'>UX Writing</h3>
             <p className='text-lg font-light'>Following the discovery phase, the key attributes for the app were trustworthiness, reliable, clean and intuitive.</p>
-          </div>
-          <div className='flex flex-col gap-4'>
-            <h3 className='text-blue-800 text-xl'>Recruitment</h3>
-            <p className='text-lg font-light'>I was responsible for finding a suitable future teammate and preparing a design challenge that would determine if he would be a good fit for the culture.</p>
           </div>
         </div>
         {/* Challenges Section */}
