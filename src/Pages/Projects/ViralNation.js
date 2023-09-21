@@ -35,7 +35,7 @@ export default function ViralNation() {
     }
   };
   return (
-    <div className='flex flex-col max-w-4xl mx-auto gap-12 mt-8'>
+    <div className='flex flex-col max-w-6xl mx-auto gap-12 mt-8'>
       {/* Header Section */}
       <div className='flex flex-col gap-8'>
         <div className='flex flex-col gap-1 mx-auto sm:mx-12 lg:mx-0'>
@@ -45,27 +45,37 @@ export default function ViralNation() {
         <div className='h-96 md:overflow-hidden lg:rounded-xl'>
           <img className='w-full h-full bg-cover object-cover bg-top md:-mt-14' src={coverImage} alt='viral nation cover'></img>
         </div>
+        {/* Sections Section */}
         <div className='flex justify-between sm:flex-row sm:mx-8 md:-mt-10 lg:-mt-14 lg:mx-0'>
           <div className='flex flex-col mx-auto w-1/2 text-center md:text-left md:mx-0'>
-            <h4 className='font-semibold text-xl'>Contribution</h4>
+            <h4 className='font-semibold text-xl'>Team</h4>
             <ul className='flex flex-col gap-1'>
-              <li className='text-lg font-light'>Feature Ideation</li>
-              <li className='text-lg font-light'>Website & App UI Design</li>
-              <li className='text-lg font-light'>Team Lead</li>
-              <li className='text-lg font-light'>Web Development</li>
+              <li className='text-lg font-light'>1 Product Designer</li>
+              <li className='text-lg font-light'>2 Frontend Developers</li>
+              <li className='text-lg font-light'>2 Backend Developers</li>
+              <li className='text-lg font-light'>Product Manager</li>
             </ul>
           </div>
-          <div className='flex flex-col mx-auto w-1/2 text-center md:text-right md:mx-0'>
+          <div className='flex flex-col mx-auto w-1/2 text-center md:text-left md:mx-0'>
+            <h4 className='font-semibold text-xl'>Responsibilites</h4>
+            <ul className='flex flex-col gap-1'>
+              <li className='text-lg font-light'>Exploration & Conceptualisation</li>
+              <li className='text-lg font-light'>User Research</li>
+              <li className='text-lg font-light'>High Fidelity Mockups</li>
+              <li className='text-lg font-light'>Design Hand Off</li>
+            </ul>
+          </div>
+          <div className='flex flex-col mx-auto w-1/2 text-center md:text-left md:mx-0'>
             <h4 className='font-semibold text-xl'>Timeline</h4>
             <p className='text-lg font-light'>Aug 2021 - Current</p>
           </div>
         </div>
       </div>
       {/* TL;DR Section */}
-      <div className='flex flex-col p-8 border-2 m-4 lg:m-0 border-gray-500 rounded'>
-        <h4 className='font-semibold text-xl'>TL;DR</h4>
+      <div className='flex flex-col p-8 border-2 m-4 lg:m-0 border-gray-300 rounded'>
+        <h4 className='font-semibold text-xl mb-2'>TL;DR</h4>
         <p className='text-lg font-light'>In my first role, I encountered numerous challenges but also reaped immense learnings. My journey taught me how to manage an overwhelming workload, navigate through ambiguous requirements, and adapt to ever-changing demands of upper management.</p>
-        <div className='flex justify-end'>
+        <div className='flex justify-end mt-4'>
           <button onClick={handleClickScroll} className='border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-100'>I do not care, show me the visuals</button>
         </div>
       </div>

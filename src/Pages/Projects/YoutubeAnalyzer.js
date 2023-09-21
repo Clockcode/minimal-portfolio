@@ -10,7 +10,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 export default function YoutubeAnalyzer() {
   return (
-    <div className='flex flex-col max-w-4xl mx-auto gap-12 mt-8'>
+    <div className='flex flex-col max-w-6xl mx-auto gap-12 mt-8'>
       {/* Header Section */}
       <div className='flex flex-col gap-8'>
         <div className='flex flex-col sm:flex-row'>
