@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectCard from '../Components/ProjectCard';
-import vnLogo from "../Assets/Images/CreatorOS_Logo.png"
-import profileImage from "../Assets/Images/profile-image.png"
+import ProjectCard from '../components/ProjectCard';
+import vnLogo from "../assets/images/CreatorOS_Logo.png"
+import profileImage from "../assets/images/profile-image.png"
 import Projects from "../data/Projects.json"
-import coverImage from "../Assets/Images/analyzer_cover.png"
-import map from "../Assets/Images/map-pin.svg"
+import coverImage from "../assets/images/analyzer_cover.png"
+import map from "../assets/images/map-pin.svg"
 export default function Home() {
   // Update the imgURL property with the imported images
   Projects[0].imgURL = vnLogo;

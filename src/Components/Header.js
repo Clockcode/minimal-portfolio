@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { ReactComponent as LinkedinIcon } from '../Assets/Images/linkedin.svg'
-import { ReactComponent as MediumIcon } from '../Assets/Images/medium.svg'
-import { ReactComponent as GithubIcon } from '../Assets/Images/github.svg'
-import { ReactComponent as YoutubeIcon } from '../Assets/Images/youtube.svg'
+import { ReactComponent as LinkedinIcon } from '../assets/images/linkedin.svg'
+import { ReactComponent as MediumIcon } from '../assets/images/medium.svg'
+import { ReactComponent as GithubIcon } from '../assets/images/github.svg'
+import { ReactComponent as YoutubeIcon } from '../assets/images/youtube.svg'
 export default function Header() {
 
   return (

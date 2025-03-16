@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import PasswordPrompt from '../../Components/PasswordPrompt';
+import PasswordPrompt from '../../components/PasswordPrompt';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
-import coverImage from "../../Assets/Images/vn_cover.jpg"
-import designKit from "../../Assets/Images/DesignKit.png"
-import dev1 from "../../Assets/Images/Dev01.png"
-import dev2 from "../../Assets/Images/Dev02.png"
-import buyermanage from "../../Assets/Images/BuyerManagement.jpg"
-import talentmanage from "../../Assets/Images/TalentManagement.jpg"
-import shortlist from "../../Assets/Images/Shortlist.jpg"
-import mediakit from "../../Assets/Images/MediaKit.jpg"
-import mediakit2 from "../../Assets/Images/MediaKit2.jpg"
-import object_cube from "../../Assets/Images/object_cube.webp"
-import problem_cube from "../../Assets/Images/problem_cube.webp"
-import solution_cube from "../../Assets/Images/solution_cube.webp"
-import talent_flow from "../../Assets/Images/talent_agent_deal.png"
-import competitive_analysis from "../../Assets/Images/competitive_analysis.png"
+import coverImage from "../../assets/images/vn_cover.jpg"
+import designKit from "../../assets/images/DesignKit.png"
+import dev1 from "../../assets/images/Dev01.png"
+import dev2 from "../../assets/images/Dev02.png"
+import buyermanage from "../../assets/images/BuyerManagement.jpg"
+import talentmanage from "../../assets/images/TalentManagement.jpg"
+import shortlist from "../../assets/images/Shortlist.jpg"
+import mediakit from "../../assets/images/MediaKit.jpg"
+import mediakit2 from "../../assets/images/MediaKit2.jpg"
+import object_cube from "../../assets/images/object_cube.webp"
+import problem_cube from "../../assets/images/problem_cube.webp"
+import solution_cube from "../../assets/images/solution_cube.webp"
+import talent_flow from "../../assets/images/talent_agent_deal.png"
+import competitive_analysis from "../../assets/images/competitive_analysis.png"
 export default function ViralNation() {
   const [authenticated, setAuthenticated] = useState(false);
 

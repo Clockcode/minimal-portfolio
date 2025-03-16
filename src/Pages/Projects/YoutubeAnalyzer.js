@@ -1,9 +1,9 @@
 import React from 'react'
-import coverImage from "../../Assets/Images/Marquee_image.jpg"
-import colorPalette from "../../Assets/Images/color_palette.png"
-import extension from "../../Assets/Images/extension.png"
-import logo from "../../Assets/Images/Marquee_tile.jpg"
-import website from "../../Assets/Images/website.png"
+import coverImage from "../../assets/images/Marquee_image.jpg"
+import colorPalette from "../../assets/images/color_palette.png"
+import extension from "../../assets/images/extension.png"
+import logo from "../../assets/images/Marquee_tile.jpg"
+import website from "../../assets/images/website.png"
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
