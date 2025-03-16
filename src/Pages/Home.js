@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <h1 className="text-center font-medium text-5xl text-gray-700 mb-2">Chadash Muldur</h1>
         <h2 className="font-normal text-2xl lg:w-3/4 mx-auto text-center text-gray-600 mb-2">
-          Product Designer | Frontend Dev | Indie Hacker
+          Product Designer | Web Developer | Indie Hacker
         </h2>
         <div className='flex flex-row w-full justify-center px-2 gap-1 mx-auto align-middle mb-8'>
           <img className='w-6 stroke-gray-500 color-gray-400' src={map} alt="Map icon" />

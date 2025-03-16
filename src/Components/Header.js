@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as LinkedinIcon } from '../assets/images/linkedin.svg'
 import { ReactComponent as MediumIcon } from '../assets/images/medium.svg'
 import { ReactComponent as GithubIcon } from '../assets/images/github.svg'
-import { ReactComponent as YoutubeIcon } from '../assets/images/youtube.svg'
+import { ReactComponent as XIcon } from '../assets/images/x.svg'
 export default function Header() {
 
   return (
@@ -15,18 +15,14 @@ export default function Header() {
         <a href="https://www.linkedin.com/in/cagdasm/" target="_blank" rel="noopener noreferrer">
           <LinkedinIcon className="h-6 fill-current" />
         </a>
-        {/* <img src={LinkedinIcon} alt="LinkedIn" className="h-4 w-4 fill-current" /> */}
         <a href="https://github.com/Clockcode" target="_blank" rel="noopener noreferrer">
           <GithubIcon className="h-6 fill-current" />
         </a>
         <a href="https://medium.com/@cagdasmuldur" target="_blank" rel="noopener noreferrer">
           <MediumIcon className="h-6 fill-current" />
         </a>
-        <a href="https://www.youtube.com/channel/UCItdJQjCFABuVKCmieFrUDA" target="_blank" rel="noopener noreferrer">
-          <YoutubeIcon className="h-6 fill-current" />
-        </a>
-        <a href="https://drive.google.com/file/d/1fNL3hmFfcHLgJi7uLe-3wl99x_KqjTbP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          Resume
+        <a href="https://x.com/cagdas_muldur" target="_blank" rel="noopener noreferrer">
+          <XIcon className="h-6 fill-current" style={{ width: '24px', height: '24px' }} />
         </a>
       </div>
     </nav>
