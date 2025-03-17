@@ -19,7 +19,6 @@ export default function Header() {
   }, []);
 
   const handleClick = (event) => {
-    event.preventDefault();
     ReactGA.event({
       category: 'header links',
       action: 'Click',
