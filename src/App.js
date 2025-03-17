@@ -3,11 +3,11 @@ import {
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
-import HomePage from "./pages/Home.js";
-import Header from "./components/Header.js";
-import ViralNation from "./pages/Projects/ViralNation.js"
-import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer.js"
-import ProjectTemplate from "./pages/ProjectTemplate.js"
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import ViralNation from "./pages/Projects/ViralNation"
+import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer"
+import ProjectTemplate from "./pages/ProjectTemplate"
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects/creator-os" element={<ViralNation />} />
           <Route path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
           <Route path="/projects/projecttemplate" element={<ProjectTemplate />} />
