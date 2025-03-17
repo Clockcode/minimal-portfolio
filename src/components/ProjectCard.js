@@ -1,19 +1,27 @@
 import React, { useState } from 'react'
 import { createPortal } from 'react-dom';
 import PasswordPrompt from './PasswordPrompt'
+import ReactGA from 'react-ga4';
 
 export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, websiteLink, appLink, locked }) {
   const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
 
+  const handleClick = (event) => {
+    ReactGA.event({
+      category: 'Project Card',
+      action: 'Click',
+      label: event.target.href
+    });
+    if (locked) {
+      event.preventDefault();
+      setShowPasswordPrompt(true);
+    }
+  }
+
   return (
     <>
       <article className='mx-0 w-96 group hover:shadow-md hover:border-blue-200 border-2 p-6 hover:bg-blue-100 rounded-[16px]'>
-        <a href={url} onClick={(e) => {
-          if (locked) {
-            e.preventDefault();
-            setShowPasswordPrompt(true);
-          }
-        }}>
+        <a href={url} onClick={handleClick}>
           <div className='flex flex-col w-full gap-8' >
             <div className='h-72 bg-[#131313] rounded-[12px]'>
               <img src={imgURL} alt={alt} className='object-contain w-full h-full rounded-[12px]' />
@@ -29,8 +37,8 @@ export default function ProjectCard({ url, imgURL, alt, title, desc, subtitles, 
                 </ul>
               </div>
               <div className='flex flex-row gap-3'>
-                {appLink ? <a className='bg-blue-500 text-white rounded h-9 justify-center align-middle text-center px-4 pt-1.5 w-full' href={appLink}>Go to Extension</a> : <div className=''></div>}
-                {websiteLink ? <a className='border-blue-500 border-2 text-blue-500 rounded h-9 justify-center align-middle text-center px-4 pt-1 w-full' href={websiteLink}>Go to Website</a> : <div className='h-9'></div>}
+                {appLink ? <button onClick={handleClick} className='bg-blue-500 text-white rounded h-9 justify-center align-middle text-center px-4 pt-1.5 w-full' href={appLink}>Go to Extension</button> : <div className=''></div>}
+                {websiteLink ? <button onClick={handleClick} className='border-blue-500 border-2 text-blue-500 rounded h-9 justify-center align-middle text-center px-4 pt-1 w-full' href={websiteLink}>Go to Website</button> : <div className='h-9'></div>}
               </div>
             </div>
           </div>

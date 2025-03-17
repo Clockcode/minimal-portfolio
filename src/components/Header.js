@@ -5,6 +5,7 @@ import { ReactComponent as MediumIcon } from '../assets/images/medium.svg'
 import { ReactComponent as GithubIcon } from '../assets/images/github.svg'
 import { ReactComponent as XIcon } from '../assets/images/x.svg'
 import "../index.css"
+import ReactGA from 'react-ga4';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -17,25 +18,34 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    ReactGA.event({
+      category: 'header links',
+      action: 'Click',
+      label: event.target.href
+    });
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full flex pt-8 pb-4 justify-between items-center px-0 flex-wrap ${isScrolled ? 'bg-gray-100 shadow-md' : ''}`}>
       <Link to="/" className='sm:w-1/4 w-full sm:mb-0 mb-4'>
         <h1 className="font-nyata text-center text-xl font-semibold">Chadash.me</h1>
       </Link>
       <div className="space-x-4 flex w-full gap-3 sm:w-2/4 justify-center">
-        <a href="https://www.linkedin.com/in/cagdasm/" target="_blank" className="flex items-center" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/cagdasm/" target="_blank" className="flex items-center" rel="noopener noreferrer" onClick={handleClick}>
           <LinkedinIcon className="h-6 fill-current text-gray-800 hover:text-black cursor-pointer transition-colors duration-100" />
         </a>
-        <a href="https://github.com/Clockcode" target="_blank" className="flex items-center" rel="noopener noreferrer">
+        <a href="https://github.com/Clockcode" target="_blank" className="flex items-center" rel="noopener noreferrer" onClick={handleClick}>
           <GithubIcon className="h-6 fill-current text-gray-800 hover:text-black cursor-pointer transition-colors duration-100" />
         </a>
-        <a href="https://medium.com/@cagdasmuldur" target="_blank" className="flex items-center" rel="noopener noreferrer">
+        <a href="https://medium.com/@cagdasmuldur" target="_blank" className="flex items-center" rel="noopener noreferrer" onClick={handleClick}>
           <MediumIcon className="h-6 fill-current text-gray-800 hover:text-black cursor-pointer transition-colors duration-100" />
         </a>
-        <a href="https://x.com/cagdas_muldur" target="_blank" className="flex items-center" rel="noopener noreferrer">
+        <a href="https://x.com/cagdas_muldur" target="_blank" className="flex items-center" rel="noopener noreferrer" onClick={handleClick}>
           <XIcon className="h-6 fill-current text-gray-800 hover:text-black cursor-pointer transition-colors duration-100" style={{ width: '24px', height: '24px' }} />
         </a>
-        <a href="mailto:cagdasmuldur@gmail.com" target="_blank" className="flex items-center" rel="noopener noreferrer">
+        <a href="mailto:cagdasmuldur@gmail.com" target="_blank" className="flex items-center" rel="noopener noreferrer" onClick={handleClick}>
           <button className='bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-black transition-colors duration-100 hover:cursor-pointer'>Contact Me</button>
         </a>
       </div>

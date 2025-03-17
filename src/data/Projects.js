@@ -2,7 +2,7 @@ import creatorOSThumbnail from "../assets/images/creator_os_thumbnail.png"
 import youtubeAnalyzerThumbnail from "../assets/images/youtube_analyzer_thumbnail.png"
 import electionReportingThumbnail from "../assets/images/election_reporting_thumbnail.png"
 import subscriptionManagementThumbnail from "../assets/images/subscription_management_thumbnail.png"
-export default [
+const projects = [
   {
     "url": "/projects/subscription-management",
     "imgURL": subscriptionManagementThumbnail,
@@ -42,3 +42,5 @@ export default [
     "locked": false
   }
 ]
+
+export default projects;

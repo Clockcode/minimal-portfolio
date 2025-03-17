@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import PasswordPrompt from '../../components/PasswordPrompt';
+import React from 'react';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import coverImage from "../../assets/images/vn_cover.jpg"

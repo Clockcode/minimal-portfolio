@@ -1,26 +1,30 @@
+import { useEffect } from "react";
 import {
-  BrowserRouter,
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
+import ReactGA from 'react-ga4';
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import ViralNation from "./pages/Projects/ViralNation"
 import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer"
 import ProjectTemplate from "./pages/ProjectTemplate"
 
+const TRACKING_ID = "G-HKTJHZYM4L"; // your Measurement ID
+
 export default function App() {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+  }, [])
   return (
     <div className="bg-gray-100">
-      <BrowserRouter>
-        <Header />
+      <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects/creator-os" element={<ViralNation />} />
-          <Route path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
-          <Route path="/projects/projecttemplate" element={<ProjectTemplate />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/projects/creator-os" element={<ViralNation />} />
+          <Route exact path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
+          <Route exact path="/projects/projecttemplate" element={<ProjectTemplate />} />
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }
