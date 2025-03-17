@@ -3,11 +3,11 @@ import {
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
-import HomePage from "./pages/Home";
-import Header from "./components/Header";
-import ViralNation from "./pages/Projects/ViralNation"
-import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer"
-import ProjectTemplate from "./pages/ProjectTemplate"
+import HomePage from "./pages/Home.js";
+import Header from "./components/Header.js";
+import ViralNation from "./pages/Projects/ViralNation.js"
+import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer.js"
+import ProjectTemplate from "./pages/ProjectTemplate.js"
 
 export default function App() {
   return (
