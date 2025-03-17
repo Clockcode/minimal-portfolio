@@ -17,16 +17,7 @@ import solution_cube from "../../assets/images/solution_cube.webp"
 import talent_flow from "../../assets/images/talent_agent_deal.png"
 import competitive_analysis from "../../assets/images/competitive_analysis.png"
 export default function ViralNation() {
-  const [authenticated, setAuthenticated] = useState(false);
 
-  if (!authenticated) {
-    return (
-      <PasswordPrompt
-        correctPassword="ineedtosee"
-        onSuccess={() => setAuthenticated(true)}
-      />
-    );
-  }
   const handleClickScroll = () => {
     const element = document.getElementById('visuals');
     if (element) {
@@ -35,7 +26,7 @@ export default function ViralNation() {
     }
   };
   return (
-    <div className='flex flex-col max-w-6xl mx-auto gap-12 mt-8'>
+    <div className='flex flex-col max-w-6xl mx-auto gap-12 pt-32'>
       {/* Header Section */}
       <div className='flex flex-col gap-8'>
         <div className='flex flex-col gap-1 mx-auto sm:mx-12 lg:mx-0'>
