@@ -8,8 +8,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header";
 import ViralNation from "./pages/Projects/ViralNation"
 import YoutubeAnalyzer from "./pages/Projects/YoutubeAnalyzer"
-import ProjectTemplate from "./pages/ProjectTemplate"
-
+import InProgress from "./pages/InProgress"
 const TRACKING_ID = "G-HKTJHZYM4L"; // your Measurement ID
 
 export default function App() {
@@ -23,7 +22,7 @@ export default function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/projects/creator-os" element={<ViralNation />} />
           <Route exact path="/projects/youtubeanalyzer" element={<YoutubeAnalyzer />} />
-          <Route exact path="/projects/projecttemplate" element={<ProjectTemplate />} />
+          <Route path="/projects/in-progress" element={<InProgress />} />
         </Routes>
     </div>
   );

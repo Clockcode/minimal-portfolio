@@ -4,16 +4,16 @@ import electionReportingThumbnail from "../assets/images/election_reporting_thum
 import subscriptionManagementThumbnail from "../assets/images/subscription_management_thumbnail.png"
 const projects = [
   {
-    "url": "/projects/subscription-management",
+    "url": "/projects/in-progress",
     "imgURL": subscriptionManagementThumbnail,
     "alt": "Subscription Management thumbnail",
     "title": "Subscription Management",
     "desc": "A system for managing and analyzing subscription data.",
     "subtitles": ["Product Design", "Visual Design", "UX Research"],
-    "locked": true
+    "locked": false
   },
   {
-    "url": "/projects/election-reporting",
+    "url": "/projects/in-progress",
     "imgURL": electionReportingThumbnail,
     "alt": "Election Reporting System thumbnail",
     "title": "Election Reporting System",
